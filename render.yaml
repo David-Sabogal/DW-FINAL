@@ -8,8 +8,8 @@ services:
     name: papel-y-luna-backend
     runtime: node
     plan: free
-    buildCommand: "npm install && cd papel-y-luna && npm install && npx sequelize-cli db:migrate"
-    startCommand: "cd papel-y-luna && npm start"
+    buildCommand: "npm install && cd papel-y-luna/backend && npm install && npx sequelize-cli db:migrate"
+    startCommand: "cd papel-y-luna/backend && npm start"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
