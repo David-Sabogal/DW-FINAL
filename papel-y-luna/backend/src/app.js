@@ -20,7 +20,7 @@ app.get('/authors', (req, res) => {
     { nombre: 'Gualter', codigo: '0000345843' },
   ]);
 });
-
+  
 app.get('/health', (req, res) => res.json({ status: 'ok', time: new Date() }));
 
 app.use('/api', require('./routes/index'));
